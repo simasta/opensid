@@ -63,100 +63,100 @@
     <tr>
       <td class="thick-kanan"><div align="center">1</div></td>
       <td>Penduduk awal bulan ini</td>
-      <td class="angka"><?php echo $penduduk_awal['WNI_L']+0 ?></td>
-      <td class="angka"><?php echo $penduduk_awal['WNI_P']+0 ?></td>
-      <td class="angka"><?php echo $penduduk_awal['WNA_L']+0 ?></td>
-      <td class="angka"><?php echo $penduduk_awal['WNA_P']+0 ?></td>
-      <td class="angka"><?php echo ($penduduk_awal['WNI_L']+$penduduk_awal['WNA_L'])?></td>
-      <td class="angka"><?php echo ($penduduk_awal['WNI_P']+$penduduk_awal['WNA_P'])?></td>
-      <td class="angka"><?php echo ($penduduk_awal['WNI_L']+$penduduk_awal['WNA_L'])+($penduduk_awal['WNI_P']+$penduduk_awal['WNA_P'])?></td>
-      <td class="angka"><?php echo ($penduduk_awal['KK_L'])?></td>
-      <td class="angka"><?php echo ($penduduk_awal['KK_P'])?></td>
-      <td class="angka"><?php echo ($penduduk_awal['KK'])?></td>
+      <td class="angka"><?php echo show_zero_as($penduduk_awal['WNI_L'],'-') ?></td>
+      <td class="angka"><?php echo show_zero_as($penduduk_awal['WNI_P'],'-') ?></td>
+      <td class="angka"><?php echo show_zero_as($penduduk_awal['WNA_L'],'-') ?></td>
+      <td class="angka"><?php echo show_zero_as($penduduk_awal['WNA_P'],'-') ?></td>
+      <td class="angka"><?php echo show_zero_as(($penduduk_awal['WNI_L']+$penduduk_awal['WNA_L']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($penduduk_awal['WNI_P']+$penduduk_awal['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($penduduk_awal['WNI_L']+$penduduk_awal['WNA_L'])+($penduduk_awal['WNI_P']+$penduduk_awal['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as($penduduk_awal['KK_L'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($penduduk_awal['KK_P'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($penduduk_awal['KK'],'-')?></td>
     </tr>
 		<tr>
     	<td class="thick-kanan"><div align="center">2</div></td>
     	<td>Kelahiran/KK baru bulan ini</td>
-    	<td class="angka"><?php echo $kelahiran['WNI_L']+0 ?></td>
-    	<td class="angka"><?php echo $kelahiran['WNI_P']+0 ?></td>
-    	<td class="angka"><?php echo $kelahiran['WNA_L']+0 ?></td>
-    	<td class="angka"><?php echo $kelahiran['WNA_P']+0 ?></td>
-      <td class="angka"><?php echo ($kelahiran['WNI_L']+$kelahiran['WNA_L'])?></td>
-      <td class="angka"><?php echo ($kelahiran['WNI_P']+$kelahiran['WNA_P'])?></td>
-      <td class="angka"><?php echo ($kelahiran['WNI_L']+$kelahiran['WNA_L'])+($kelahiran['WNI_P']+$kelahiran['WNA_P'])?></td>
-      <td class="angka"><?php echo ($kelahiran['KK_L'])?></td>
-      <td class="angka"><?php echo ($kelahiran['KK_P'])?></td>
-      <td class="angka"><?php echo ($kelahiran['KK'])?></td>
+    	<td class="angka"><?php echo show_zero_as($kelahiran['WNI_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($kelahiran['WNI_P'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($kelahiran['WNA_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($kelahiran['WNA_P'],'-') ?></td>
+      <td class="angka"><?php echo show_zero_as(($kelahiran['WNI_L']+$kelahiran['WNA_L']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($kelahiran['WNI_P']+$kelahiran['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($kelahiran['WNI_L']+$kelahiran['WNA_L'])+($kelahiran['WNI_P']+$kelahiran['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as($kelahiran['KK_L'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($kelahiran['KK_P'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($kelahiran['KK'],'-')?></td>
   	</tr>
 		<tr>
     	<td class="thick-kanan angka"><div align="center">3</div></td>
     	<td>Kematian bulan ini</td>
-    	<td class="angka"><?php echo $kematian['WNI_L']+0 ?></td>
-    	<td class="angka"><?php echo $kematian['WNI_P']+0 ?></td>
-    	<td class="angka"><?php echo $kematian['WNA_L']+0 ?></td>
-    	<td class="angka"><?php echo $kematian['WNA_P']+0 ?></td>
-      <td class="angka"><?php echo ($kematian['WNI_L']+$kematian['WNA_L'])?></td>
-      <td class="angka"><?php echo ($kematian['WNI_P']+$kematian['WNA_P'])?></td>
-      <td class="angka"><?php echo ($kematian['WNI_L']+$kematian['WNA_L'])+($kematian['WNI_P']+$kematian['WNA_P'])?></td>
-      <td class="angka"><?php echo ($kematian['KK_L'])?></td>
-      <td class="angka"><?php echo ($kematian['KK_P'])?></td>
-      <td class="angka"><?php echo ($kematian['KK'])?></td>
+    	<td class="angka"><?php echo show_zero_as($kematian['WNI_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($kematian['WNI_P'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($kematian['WNA_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($kematian['WNA_P'],'-') ?></td>
+      <td class="angka"><?php echo show_zero_as(($kematian['WNI_L']+$kematian['WNA_L']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($kematian['WNI_P']+$kematian['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($kematian['WNI_L']+$kematian['WNA_L'])+($kematian['WNI_P']+$kematian['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as($kematian['KK_L'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($kematian['KK_P'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($kematian['KK'],'-')?></td>
   	</tr>
 		<tr>
     	<td class="thick-kanan angka"><div align="center">4</div></td>
     	<td>Pendatang bulan ini</td>
-    	<td class="angka"><?php echo $pendatang['WNI_L']+0 ?></td>
-    	<td class="angka"><?php echo $pendatang['WNI_P']+0 ?></td>
-    	<td class="angka"><?php echo $pendatang['WNA_L']+0 ?></td>
-    	<td class="angka"><?php echo $pendatang['WNA_P']+0 ?></td>
-      <td class="angka"><?php echo ($pendatang['WNI_L']+$pendatang['WNA_L'])?></td>
-      <td class="angka"><?php echo ($pendatang['WNI_P']+$pendatang['WNA_P'])?></td>
-      <td class="angka"><?php echo ($pendatang['WNI_L']+$pendatang['WNA_L'])+($pendatang['WNI_P']+$pendatang['WNA_P'])?></td>
-      <td class="angka"><?php echo ($pendatang['KK_L'])?></td>
-      <td class="angka"><?php echo ($pendatang['KK_P'])?></td>
-      <td class="angka"><?php echo ($pendatang['KK'])?></td>
+    	<td class="angka"><?php echo show_zero_as($pendatang['WNI_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($pendatang['WNI_P'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($pendatang['WNA_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($pendatang['WNA_P'],'-') ?></td>
+      <td class="angka"><?php echo show_zero_as(($pendatang['WNI_L']+$pendatang['WNA_L']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($pendatang['WNI_P']+$pendatang['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($pendatang['WNI_L']+$pendatang['WNA_L'])+($pendatang['WNI_P']+$pendatang['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as($pendatang['KK_L'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($pendatang['KK_P'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($pendatang['KK'],'-')?></td>
   	</tr>
 		<tr>
     	<td class="thick-kanan angka"><div align="center">5</div></td>
     	<td>Pindah bulan ini</td>
-    	<td class="angka"><?php echo $pindah['WNI_L']+0 ?></td>
-    	<td class="angka"><?php echo $pindah['WNI_P']+0 ?></td>
-    	<td class="angka"><?php echo $pindah['WNA_L']+0 ?></td>
-    	<td class="angka"><?php echo $pindah['WNA_P']+0 ?></td>
-      <td class="angka"><?php echo ($pindah['WNI_L']+$pindah['WNA_L'])?></td>
-      <td class="angka"><?php echo ($pindah['WNI_P']+$pindah['WNA_P'])?></td>
-      <td class="angka"><?php echo ($pindah['WNI_L']+$pindah['WNA_L'])+($pindah['WNI_P']+$pindah['WNA_P'])?></td>
-      <td class="angka"><?php echo ($pindah['KK_L'])?></td>
-      <td class="angka"><?php echo ($pindah['KK_P'])?></td>
-      <td class="angka"><?php echo ($pindah['KK'])?></td>
+    	<td class="angka"><?php echo show_zero_as($pindah['WNI_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($pindah['WNI_P'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($pindah['WNA_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($pindah['WNA_P'],'-') ?></td>
+      <td class="angka"><?php echo show_zero_as(($pindah['WNI_L']+$pindah['WNA_L']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($pindah['WNI_P']+$pindah['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($pindah['WNI_L']+$pindah['WNA_L'])+($pindah['WNI_P']+$pindah['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as($pindah['KK_L'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($pindah['KK_P'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($pindah['KK'],'-')?></td>
   	</tr>
     <tr>
     	<td class="thick-kanan angka"><div align="center">6</div></td>
     	<td>Penduduk hilang bulan ini</td>
-    	<td class="angka"><?php echo $hilang['WNI_L']+0 ?></td>
-    	<td class="angka"><?php echo $hilang['WNI_P']+0 ?></td>
-    	<td class="angka"><?php echo $hilang['WNA_L']+0 ?></td>
-    	<td class="angka"><?php echo $hilang['WNA_P']+0 ?></td>
-      <td class="angka"><?php echo ($hilang['WNI_L']+$hilang['WNA_L'])?></td>
-      <td class="angka"><?php echo ($hilang['WNI_P']+$hilang['WNA_P'])?></td>
-      <td class="angka"><?php echo ($hilang['WNI_L']+$hilang['WNA_L'])+($hilang['WNI_P']+$hilang['WNA_P'])?></td>
-      <td class="angka"><?php echo ($hilang['KK_L'])?></td>
-      <td class="angka"><?php echo ($hilang['KK_P'])?></td>
-      <td class="angka"><?php echo ($hilang['KK'])?></td>
+    	<td class="angka"><?php echo show_zero_as($hilang['WNI_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($hilang['WNI_P'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($hilang['WNA_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($hilang['WNA_P'],'-') ?></td>
+      <td class="angka"><?php echo show_zero_as(($hilang['WNI_L']+$hilang['WNA_L']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($hilang['WNI_P']+$hilang['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($hilang['WNI_L']+$hilang['WNA_L'])+($hilang['WNI_P']+$hilang['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as($hilang['KK_L'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($hilang['KK_P'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($hilang['KK'],'-')?></td>
   	</tr>
 		<tr>
     	<td class="thick-kanan angka"><div align="center">7</div></td>
     	<td>Penduduk akhir bulan ini</td>
-    	<td class="angka"><?php echo $penduduk_akhir['WNI_L']+0 ?></td>
-    	<td class="angka"><?php echo $penduduk_akhir['WNI_P']+0 ?></td>
-    	<td class="angka"><?php echo $penduduk_akhir['WNA_L']+0 ?></td>
-    	<td class="angka"><?php echo $penduduk_akhir['WNA_P']+0 ?></td>
-      <td class="angka"><?php echo ($penduduk_akhir['WNI_L']+$penduduk_akhir['WNA_L'])?></td>
-      <td class="angka"><?php echo ($penduduk_akhir['WNI_P']+$penduduk_akhir['WNA_P'])?></td>
-      <td class="angka"><?php echo ($penduduk_akhir['WNI_L']+$penduduk_akhir['WNA_L'])+($penduduk_akhir['WNI_P']+$penduduk_akhir['WNA_P'])?></td>
-      <td class="angka"><?php echo ($penduduk_akhir['KK_L'])?></td>
-      <td class="angka"><?php echo ($penduduk_akhir['KK_P'])?></td>
-      <td class="angka"><?php echo ($penduduk_akhir['KK'])?></td>
+    	<td class="angka"><?php echo show_zero_as($penduduk_akhir['WNI_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($penduduk_akhir['WNI_P'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($penduduk_akhir['WNA_L'],'-') ?></td>
+    	<td class="angka"><?php echo show_zero_as($penduduk_akhir['WNA_P'],'-') ?></td>
+      <td class="angka"><?php echo show_zero_as(($penduduk_akhir['WNI_L']+$penduduk_akhir['WNA_L']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($penduduk_akhir['WNI_P']+$penduduk_akhir['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as(($penduduk_akhir['WNI_L']+$penduduk_akhir['WNA_L'])+($penduduk_akhir['WNI_P']+$penduduk_akhir['WNA_P']),'-')?></td>
+      <td class="angka"><?php echo show_zero_as($penduduk_akhir['KK_L'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($penduduk_akhir['KK_P'],'-')?></td>
+      <td class="angka"><?php echo show_zero_as($penduduk_akhir['KK'],'-')?></td>
   	</tr>
   </tbody>
 </table>

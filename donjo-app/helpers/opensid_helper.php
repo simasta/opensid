@@ -410,4 +410,8 @@ define("KODE_PEKERJAAN", serialize(array(
 		return ucwords(str_replace(array('  ', '_'), ' ', $title));
 	}
 
+  function show_zero_as($val, $str){
+    return (empty($val) ? $str : $val);
+  }
+
 ?>

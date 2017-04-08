@@ -19,7 +19,7 @@
       <table  width="100%">
   			<tbody>
           <tr>	<?php foreach($config as $data){?>
-    				<td width="37%"><h4>PEMERINTAH KABUPATEN/KOTA  <?php echo unpenetration($data['nama_kabupaten'])?></h4></td>
+    				<td width="37%"><h4>PEMERINTAH KABUPATEN/KOTA  <?php echo strtoupper($data['nama_kabupaten'])?></h4></td>
     				<td align= "right" width="17%"><h4>LAMPIRAN A - 9</h4></td>
           </tr>
   				<tr>
