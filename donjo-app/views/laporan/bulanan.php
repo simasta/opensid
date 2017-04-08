@@ -86,6 +86,9 @@
 		    </tbody>
       </table>
 
+      <?php $warna_border = '#729ea5';?>
+      <?php $warna_font = '#333333';?>
+      <?php $warna_background = '#8DABD4';?>
       <?php include ("donjo-app/views/laporan/tabel_bulanan.php"); ?>
 
       <p>&nbsp;</p>
