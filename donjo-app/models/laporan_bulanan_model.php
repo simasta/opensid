@@ -203,12 +203,12 @@ from  tweb_wil_clusterdesa c WHERE rw<>'0' AND rt<>'0' AND (select count(id) fro
 
 	function penduduk_awal(){
 
-		$bln=$_SESSION['bulanku'];
-		$thn=$_SESSION['tahunku'];
+		$bln=$this->db->escape($_SESSION['bulanku']-1);
+		$thn=$this->db->escape($_SESSION['tahunku']);
 
 		$sql   = "SELECT lk as WNI_L, pr AS WNI_P, kk_lk AS KK_L, kk_pr AS KK_P, kk AS KK
 			FROM log_bulanan
-			WHERE month(tgl) = $bln-1 AND year(tgl) = $thn;";
+			WHERE month(tgl) = $bln AND year(tgl) = $thn;";
 		$query = $this->db->query($sql);
 		if($query){
 			if($query->num_rows() > 0){
