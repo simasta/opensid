@@ -471,9 +471,11 @@
 		$blnskrg = (date("m"));
 		$thnskrg = (date("Y"));
 		if($_POST['status']=='3'){
+			// Pendatang
 			$log['id_detail']="8";
-			}else{
+		}else{
 			if(($blnlahir==$blnskrg)and($thnlahir==$thnskrg)){
+				// Lahir
 				$log['id_detail']='1';
 			}else{
 				$log['id_detail']='5';

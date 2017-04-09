@@ -304,6 +304,18 @@ FROM log_penduduk   ";
 		return $data;
 	}
 
+	/* KETERANGAN id_detail
+	   1 = status hidup, insert penduduk baru lahir
+	   2 = status menjadi mati
+		 3 = status menjadi pindah
+		 4 = status menjadi hilang
+		 5 = insert penduduk baru dengan status tetap/tidak tetap
+		 6 = pindah dalam desa
+		 7 = hapus anggota keluarga
+		 8 = insert penduduk baru dengan status pendatang
+		 9 = tambah keluarga baru dari penduduk yang sudah ada
+	*/
+
 	function kematian(){
 		$sql   = "SELECT
 			(SELECT COUNT(u.id) FROM log_penduduk u LEFT JOIN tweb_penduduk p ON u.id_pend = p.id WHERE month(tgl_peristiwa) = ? AND year(tgl_peristiwa) =? AND sex =1 AND id_detail =2) AS WNI_L,
